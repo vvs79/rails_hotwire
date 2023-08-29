@@ -1,0 +1,17 @@
+<main class="container">
+  <%= link_to sanitize("&larr; Back to posts"), posts_path, { style: 'margin-left: 100px;' } %>
+  <div class="header">
+    <h3>
+      <%= "Title: #{@post.title}" %>
+    </h3>
+    <h4>
+      <%= "Article: #{@post.title}" %>
+    </h4>
+  </div>
+
+  <div>
+    <%= turbo_frame_tag :edit_turbo_frame do %>
+      <%= link_to 'Edit', edit_post_path(@post), class: 'btn, rtn-warning' %>
+    <% end %>
+  </div>
+</main>
