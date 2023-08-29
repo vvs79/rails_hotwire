@@ -5,7 +5,7 @@
     <h1>Edit post</h1>
   </div>
 
-  <%= turbo_frame_tag :edit_turbo_frame do %>
+  <%= turbo_frame_tag @post do %>
     <%= render 'form', post: @post %>
   <% end %>
 </main

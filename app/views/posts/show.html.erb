@@ -9,8 +9,10 @@
     </h4>
   </div>
 
+  <%#= turbo_stream_from @post %>
+
   <div>
-    <%= turbo_frame_tag :edit_turbo_frame do %>
+    <%= turbo_frame_tag @post do %>
       <%= link_to 'Edit', edit_post_path(@post), class: 'btn, rtn-warning' %>
     <% end %>
   </div>

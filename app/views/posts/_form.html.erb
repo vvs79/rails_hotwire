@@ -10,6 +10,6 @@
   <%= f.label :article %>
   <%= f.input :article, label: false %>
 
-  <%= link_to 'Cancel', posts_path, class: 'btn btn--light' %>
+  <%= link_to 'Cancel', posts_path, class: 'btn btn--light', data: { turbo_frame: '_top' } %>
   <%= f.submit class: 'btn btn--secondary' %>
 <% end %>
