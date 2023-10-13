@@ -7,9 +7,9 @@
     <%= "Article: #{post.article}" %>
     <div class="post_actions">
       <%= button_to 'Delete',
-                    post_path(post),
+                    post,
                     method: :delete,
-                    # form: { data: { turbo_frame: :_top } },
+                    data: { turbo_frame: :_top },
                     class: 'btn btn--light' %>
       <%= link_to 'Edit',
                   edit_post_path(post),
