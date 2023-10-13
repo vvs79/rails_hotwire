@@ -9,5 +9,7 @@ import "channels"
 import "@hotwired/turbo-rails"
 import * as Turbo from "@hotwired/turbo"
 
+import 'bootstrap'; 
+
 Rails.start()
 ActiveStorage.start()
